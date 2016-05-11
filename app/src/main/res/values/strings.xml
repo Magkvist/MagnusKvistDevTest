@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GiantLeapDevTest</string>
+    <string name="need">Need at least 9 numbers or 2 letters</string>
+    <string name="loadmore">Load More</string>
+    <string name="orgnr">Org nr: </string>
+    <string name="registered">Register date: </string>
+    <string name="employees">Employees: </string>
+    <string name="homepage">Homepage: </string>
+    <string name="filtersave">Save Values</string>
+    <string name="zipneed">Zip-code needs 4 numbers. New value not saved</string>
+</resources>

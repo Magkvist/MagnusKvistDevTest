@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp" android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not bankrupt"
+        android:id="@+id/bankruptCheckBox"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="false"
+        android:checked="false"
+        android:layout_below="@+id/relativeLayout" />
+
+    <EditText
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/amountEmployeesEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/bankruptCheckBox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Least amount of employees"
+        android:id="@+id/textView"
+        android:layout_toEndOf="@+id/amountEmployeesEditText"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/amountEmployeesEditText"
+        android:layout_alignTop="@+id/amountEmployeesEditText"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/zipCodeEditText"
+        android:layout_below="@+id/amountEmployeesEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Zip code"
+        android:id="@+id/textView2"
+        android:layout_toEndOf="@+id/zipCodeEditText"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/zipCodeEditText"
+        android:layout_alignTop="@+id/zipCodeEditText"
+        android:gravity="center_vertical" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/relativeLayout"
+        android:background="#82d5ff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Filters"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/closeButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/abc_ic_clear_mtrl_alpha" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filtersave"
+        android:id="@+id/saveButton"
+        android:layout_below="@+id/zipCodeEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>

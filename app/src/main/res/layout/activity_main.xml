@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.magnuskvist.giantleapdevtest.MainActivity"
+    android:background="#dfdfdf">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainListView"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="false"
+        android:divider="@android:color/transparent"
+        android:layout_below="@+id/searchText"
+        android:layout_marginTop="10dp"
+        android:alpha="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/searchText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:hint="Enter name or Org nr"
+        android:background="#ffffff"
+        android:elevation="6dp"
+        android:layout_marginLeft="10dp"
+        android:clipToPadding="false"
+        android:alpha="1"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/filterButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/filterButton"
+        android:layout_alignTop="@+id/searchText"
+        android:layout_alignBottom="@+id/searchText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/ic_menu_edit" />
+
+</RelativeLayout>
