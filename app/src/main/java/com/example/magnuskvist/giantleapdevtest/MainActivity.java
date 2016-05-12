@@ -415,7 +415,7 @@ public class MainActivity extends Activity {
                             }
                         });
                     }else{
-                        addressDetText.setText("NA");
+                        addressDetText.setText("Address: NA");
                     }
 
                     //Det == Detailed
@@ -433,8 +433,12 @@ public class MainActivity extends Activity {
 
             nameText.setText(data.get(position)[0]);
             orgNrText.setText(data.get(position)[1]);
-            addressText.setText(data.get(position)[2]);
 
+            if(data.get(position)[2].equals("NA")){
+                addressText.setText("Address: " + data.get(position)[2]);
+            }else {
+                addressText.setText(data.get(position)[2]);
+            }
             return view;
         }
 
